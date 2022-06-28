@@ -45,11 +45,6 @@ class EmployeeController {
                 .body(entityModel);
     }
 
-//    @PostMapping("/employees")
-//    Employee newEmployee(@RequestBody Employee newEmployee) {
-//        return repository.save(newEmployee);
-//    }
-
     @GetMapping("/employees/{id}")
     EntityModel<Employee> one(@PathVariable Long id) {
         Employee employee = repository.findById(id)
@@ -79,22 +74,11 @@ class EmployeeController {
                 .body(entityModel);
     }
 
-//    @PutMapping("/employees/{id}")
-//    Employee replaceEmployee(@RequestBody Employee newEmployee, @PathVariable Long id) {
-//        return repository.findById(id)
-//                .map(employee -> {
-//                    employee.setName(newEmployee.getName());
-//                    employee.setRole(newEmployee.getRole());
-//                    return repository.save(employee);
-//                })
-//                .orElseGet(() -> {
-//                    newEmployee.setId(id)   ;
-//                    return repository.save(newEmployee);
-//                });
-//    }
-
     @DeleteMapping("/employees/{id}")
-    void deleteEmployee(@PathVariable Long id) {
+    ResponseEntity<?> deleteEmployee(@PathVariable Long id) {
+
         repository.deleteById(id);
+
+        return ResponseEntity.noContent().build();
     }
 }
