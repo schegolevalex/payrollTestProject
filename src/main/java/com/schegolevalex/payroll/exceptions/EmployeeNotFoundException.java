@@ -1,4 +1,4 @@
-package com.schegolevalex.payroll;
+package com.schegolevalex.payroll.exceptions;
 
 public class EmployeeNotFoundException extends RuntimeException {
     public EmployeeNotFoundException(Long id) {

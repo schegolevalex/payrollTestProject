@@ -1,4 +1,4 @@
-package com.schegolevalex.payroll;
+package com.schegolevalex.payroll.entities;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +11,7 @@ import java.util.Objects;
 @Entity
 @Getter
 @Setter
-class Employee {
+public class Employee {
 
     private @Id @GeneratedValue Long id;
     private String firstName;

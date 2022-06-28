@@ -1,5 +1,7 @@
 package com.schegolevalex.payroll;
 
+import com.schegolevalex.payroll.entities.Employee;
+import com.schegolevalex.payroll.repositories.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

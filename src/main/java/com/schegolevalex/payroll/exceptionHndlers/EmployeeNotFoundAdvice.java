@@ -1,5 +1,6 @@
-package com.schegolevalex.payroll;
+package com.schegolevalex.payroll.exceptionHndlers;
 
+import com.schegolevalex.payroll.exceptions.EmployeeNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

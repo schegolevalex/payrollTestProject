@@ -1,4 +1,6 @@
-package com.schegolevalex.payroll;
+package com.schegolevalex.payroll.entities;
+
+import com.schegolevalex.payroll.Status;
 
 import java.util.Objects;
 import javax.persistence.Entity;
@@ -8,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "CUSTOMER_ORDER")
-class Order {
+public class Order {
 
     private @Id @GeneratedValue Long id;
 
