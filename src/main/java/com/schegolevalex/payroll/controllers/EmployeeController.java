@@ -1,6 +1,6 @@
 package com.schegolevalex.payroll.controllers;
 
-import com.schegolevalex.payroll.EmployeeModelAssembler;
+import com.schegolevalex.payroll.assemblers.EmployeeModelAssembler;
 import com.schegolevalex.payroll.exceptions.EmployeeNotFoundException;
 import com.schegolevalex.payroll.entities.Employee;
 import com.schegolevalex.payroll.repositories.EmployeeRepository;

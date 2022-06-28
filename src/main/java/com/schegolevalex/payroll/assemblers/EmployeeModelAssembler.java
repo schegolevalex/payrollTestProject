@@ -1,4 +1,4 @@
-package com.schegolevalex.payroll;
+package com.schegolevalex.payroll.assemblers;
 
 import com.schegolevalex.payroll.controllers.EmployeeController;
 import com.schegolevalex.payroll.entities.Employee;
