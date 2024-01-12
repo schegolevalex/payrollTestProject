@@ -1,27 +1,29 @@
 package com.schegolevalex.payroll.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Employee {
-
-    private @Id @GeneratedValue Long id;
+    @Id
+    @GeneratedValue
+    private Long id;
     private String firstName;
     private String lastName;
     private String role;
 
-    public Employee() {}
-
     public Employee(String firstName, String lastName, String role) {
-
         this.firstName = firstName;
         this.lastName = lastName;
         this.role = role;
@@ -39,7 +41,6 @@ public class Employee {
 
     @Override
     public boolean equals(Object o) {
-
         if (this == o)
             return true;
         if (!(o instanceof Employee))
